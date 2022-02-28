@@ -30,10 +30,16 @@ function Box(props){
     default:
       break;
   }
-  const div = <div className={'Box ' + size} style={props.style}>{props.children}</div>;
+  const div = <div className={'box ' + size} style={props.style}>{props.children}</div>;
   // const div = <div className={'Box ' + className} style={style}>{props.children}</div>
   return div;
 }
+
+// function Box({size, style, children}) {
+//   return (
+//     <div className={`box box--${size}`} style={style}>{children}</div>
+//   )
+// }
 
 const blueStyle = {backgroundColor : "lightblue"};
 const pinkStyle = {backgroundColor : "pink"};
